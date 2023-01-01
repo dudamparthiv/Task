@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        section{
+            border: 2px solid blue;
+            float: left;
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        section div{
+            float: left;
+            border: 2px solid blue;
+            width: 24.5%;
+            padding: 15px;
+            box-sizing: border-box;
+            margin: 2px;
+        }
+
+        section div:nth-child(2){
+            width: 50%;
+        }
+        div{
+            border: 2px solid blue;
+            display:flex;
+            width :100%;
+            padding: 15px;
+            box-sizing: border-box;
+            margin: 2px;
+        }
+        .a{
+            border: 2px solid blue;
+            padding: 15px ;
+            width: 100% ;
+        }
+        .b{
+            border: 2px solid blue;
+            padding: 15px ;
+            width: 215% ;
+        }
+        .c{
+            border: 2px solid blue;
+            padding: 15px ;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>layout using float</h1>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+    <h1>layout using display:flex</h1>
+    <div>
+        <div class="a">1</div>
+        <div class="b">2</div>
+        <div class="c">3</div>
+    </div>
+</body>
+</html>
